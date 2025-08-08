@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+ul#todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul#todo-list li {
+  background-color: #f0f0f0;
+  color: gray;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+ul#todo-list li.completed {
+  color: white;
+  background-color: #0090fc;
+}
+
+.checkmark {
+  float: right;
+  visibility: hidden;
+}
+
+li.completed .checkmark {
+  visibility: visible;
+}
